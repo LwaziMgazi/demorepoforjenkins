@@ -1,2 +1,0 @@
-#demorepoforJenkins
-hello world
