@@ -23,6 +23,8 @@ node('node'){
      try{
        sh "$mvnHome/bin/mvn clean package -DiskipTests=true."
        archiveArtifacts allowEmptyArchive: true, artifacts: 'addressbook_main/*.txt'
+     }catch(err){
+       echo err
      }
    }
 }
