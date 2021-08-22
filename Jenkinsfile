@@ -15,8 +15,8 @@ node('node'){
    stage('test case and report'){
      try{
        echo "executing test"
-     }catch(){
-
+     }catch(err){
+       echo err
      }
    }
 }
